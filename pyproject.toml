@@ -1,0 +1,26 @@
+[project]
+name = "caviar"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Maxime Filippini", email = "maxime.filippini@gmail.com" }]
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",
+    "ipykernel>=7.3.0",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "plotly>=6.9.0",
+    "polars>=1.43.2",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.15.0",
+    "scipy>=1.18.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.21,<0.10.0"]
+build-backend = "uv_build"
+
+
+[tool.ruff.lint.isort]
+force-single-line = true
