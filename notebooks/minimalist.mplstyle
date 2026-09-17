@@ -1,0 +1,109 @@
+# A restrained Matplotlib style for reports, articles, and presentations.
+#
+# Use with:
+#   plt.style.use("minimalist.mplstyle")
+# or:
+#   with plt.style.context("minimalist.mplstyle"):
+#       ...
+
+# Canvas and output
+figure.figsize: 7.2, 4.5
+figure.dpi: 120
+figure.facecolor: none
+figure.edgecolor: none
+figure.autolayout: false
+savefig.dpi: 300
+savefig.facecolor: none
+savefig.edgecolor: none
+savefig.bbox: tight
+savefig.pad_inches: 0.12
+# Keep only the outer canvas transparent; the axes retain their white background.
+savefig.transparent: false
+
+# Typography
+font.family: monospace
+font.monospace: IBM Plex Mono
+font.sans-serif: Inter, IBM Plex Sans, Helvetica Neue, Arial, DejaVu Sans
+font.size: 10
+font.weight: normal
+text.color: 000000
+mathtext.fontset: dejavusans
+mathtext.default: regular
+
+# Titles and labels
+axes.titlelocation: left
+axes.titlepad: 12
+axes.titlesize: 14
+axes.titleweight: bold
+axes.labelsize: 10
+axes.labelpad: 7
+axes.labelcolor: 3c4043
+axes.facecolor: white
+axes.edgecolor: 000000
+axes.linewidth: 0.9
+axes.axisbelow: true
+axes.spines.top: true
+axes.spines.right: true
+axes.spines.bottom: true
+axes.spines.left: true
+axes.formatter.useoffset: false
+axes.unicode_minus: true
+
+# A colorblind-friendly, muted categorical palette
+axes.prop_cycle: cycler('color', ['3b6fb6', 'd17a22', '3b8c6e', 'bd4b64', '7562a8', '8a6540', 'c0609b', '68727d'])
+
+# Lines and markers
+lines.linewidth: 1.8
+lines.linestyle: -
+lines.solid_capstyle: round
+lines.solid_joinstyle: round
+lines.markersize: 5
+lines.markeredgewidth: 0
+patch.edgecolor: white
+patch.linewidth: 0.6
+
+# Ticks
+xtick.color: 5f6368
+ytick.color: 5f6368
+xtick.labelsize: 9
+ytick.labelsize: 9
+xtick.direction: out
+ytick.direction: out
+xtick.major.size: 3.5
+ytick.major.size: 0
+xtick.major.width: 0.8
+ytick.major.width: 0
+xtick.major.pad: 5
+ytick.major.pad: 6
+xtick.minor.visible: false
+ytick.minor.visible: false
+
+# Grid: quiet horizontal guides keep values readable without boxing the plot in
+axes.grid: true
+axes.grid.axis: y
+axes.grid.which: major
+grid.color: dfe2e5
+grid.linestyle: -
+grid.linewidth: 0.7
+grid.alpha: 0.7
+
+# Legends
+legend.frameon: false
+legend.fontsize: 9
+legend.title_fontsize: 9
+legend.labelspacing: 0.5
+legend.handlelength: 1.8
+legend.handletextpad: 0.6
+legend.borderaxespad: 0.6
+legend.columnspacing: 1.2
+
+# Images, histograms, and error bars
+image.cmap: viridis
+image.interpolation: antialiased
+hist.bins: 20
+errorbar.capsize: 3
+
+# Preserve editable text in vector exports
+pdf.fonttype: 42
+ps.fonttype: 42
+svg.fonttype: none
